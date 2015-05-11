@@ -1,0 +1,15 @@
+#!/bin/sh
+cd "$(git rev-parse --show-toplevel)"
+mv post-checkout ./.git/hooks
+echo "  ---------------------------------------"
+echo "  git-dyno-htaccess deployed successfully"
+echo "  ---------------------------------------"
+echo "  "
+echo "  This installation file is deleted"
+echo "  ---------------------------------------"
+echo "  "
+echo "  Always use the git-dyno-htaccess.php"
+echo "  to update your repo's htaccess rules"
+echo "  --------------------------------------"
+rm git-dyno-htaccess-install
+echo "  ______________________________________"
